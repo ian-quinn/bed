@@ -1,0 +1,331 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url('fonts/OpenSans-Regular.ttf');
+}
+
+body {	font-family: 'Open Sans', Roboto;}
+
+a {  color: #555;  text-decoration: none;}
+
+a:hover {  color: #B22323;  text-decoration: none;}
+
+i{ color: #CED4DA;}
+
+i:hover { color: #B22323;} 
+/* this kind of global change is very dangerous, considering to disable it */
+
+
+
+/*-----------------------------------------------*/
+/*------------custom markdown render-----------*/
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1em;
+  margin-bottom: 0.5rem;
+}
+
+code {
+    border-radius: 3px;
+    font-family: Consolas, Monaco, Andale Mono;
+    margin: 0 2px;
+    padding: 2px;
+    background-color: #f7f7f7;
+    font-size: 0.9em;
+    line-height: 0.3em;
+}
+
+pre {
+    line-height: 1.4em;
+    overflow: auto;
+    padding: 6px 10px;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+}
+
+pre > code {
+    border: 0;
+    display: inline;
+    max-width: initial;
+    padding: 0;
+    margin: 0;
+    overflow: initial;
+    line-height: inherit;
+    white-space: pre;
+    background: 0 0;
+    background-color:#f7f7f7;
+}
+
+.toc {
+  list-style: none;
+  margin-left: 0px;
+  margin-bottom: 5px;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.toc a{color: #CED4DA;}
+.toc a:hover{color: #B22323; text-decoration: none;}
+
+.toc_box {
+  margin-left: 5px;
+  top: 50px;
+  margin-top:20px;
+  border-left: 1px solid #CED4DA;
+}
+
+.post_box blockquote {
+  border-left: 5px solid #eee;
+  padding-left: 15px;
+}
+
+.post_box li {
+   font-size: .9em;
+}
+
+.post_box table {
+    *border-collapse: collapse; /* IE7 and lower */
+    border-spacing: 0;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.post_box table {
+    border: solid #ccc 1px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    /*-webkit-box-shadow: 0 1px 1px #ccc;
+    -moz-box-shadow: 0 1px 1px #ccc;
+    box-shadow: 0 1px 1px #ccc;   */
+}
+.post_box table tr:hover {
+    background: #fbf8e9;
+    -o-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+.post_box table td, th {
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    font-size: 0.8em;
+    height: 1em;
+}
+
+.post_box table th {
+    background-color: #f7f7f7;
+}
+
+.post_box table td:first-child, table th:first-child {
+    border-left: none;
+}
+
+.post_box table th:first-child {
+    -moz-border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
+    border-radius: 6px 0 0 0;
+}
+.post_box table th:last-child {
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
+}
+.post_box table th:only-child{
+    -moz-border-radius: 6px 6px 0 0;
+    -webkit-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+}
+.post_box table tr:last-child td:first-child {
+    -moz-border-radius: 0 0 0 6px;
+    -webkit-border-radius: 0 0 0 6px;
+    border-radius: 0 0 0 6px;
+}
+.post_box table tr:last-child td:last-child {
+    -moz-border-radius: 0 0 6px 0;
+    -webkit-border-radius: 0 0 6px 0;
+    border-radius: 0 0 6px 0;
+}
+
+.img-responsive {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  overflow: hidden;
+} /* need to update this method */
+/*--------custom markdown render over-----------*/
+/*------.post_box is for table render-----------*/
+
+
+
+/*-----------------------------------------------*/
+/*------------AddPubsForm abstract textarea field fixed height-----------*/
+.pubs {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-top: 1px solid #CED4DA;
+  margin: 0px;
+  padding-left: -10px;
+  padding-right: -10px;
+  font-size: 0.9em;
+}
+
+.pubs-info {
+  font-size: 0.6em;
+  color: #cecece;
+}
+
+.pubs-button {
+  background: none;
+  border: none;
+  color: gray;
+  text-align: center;
+  padding-left: 10px;
+  min-width: 10px;
+}
+
+.pub-button {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  float: right;
+  margin-top: -25px;
+  margin-right: 30px;
+  padding: 9px 11px;
+
+}
+
+.pub-box {
+  border-top: : 1px solid #B22323;
+  padding-top: 15px;
+}
+
+.pubs_box textarea.form-control { height: 100%; }
+
+.cutter {
+  height: 1px;
+  width: 100%;
+  border-top: 1px solid #CED4DA;
+  margin-bottom: 30px;
+}
+
+
+
+
+/*-----------------------------------------------*/
+/*----------people page, jumbo_avatar-----------*/
+.img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* base.html refinement */
+.img-box img {
+  object-fit: cover;
+  min-width: 100%;
+  min-height: 100%
+}
+
+.navbar {
+  background: #fff;
+  border-bottom: 1px solid #B22323;
+  box-shadow: 0px 0px 1px rgba(0, 0,0, 0.1);
+  transition: all 0.3s;
+  font-size: 0.9em;
+  height: 50px;
+}
+/*
+.list-group-item {
+  height: 60px;
+}add a parent class*/
+
+.navbar.scrollUp {
+  transform: translateY(-50px);
+} /* support auto scrollup when page rolls down. diabled for now */
+
+.nav-active {
+  border-bottom: 3px solid #B22323;
+}
+
+.nav-link {
+  display: block;
+  padding: 0rem 1rem;
+  line-height: 50px;
+}
+
+.placeholder {
+  height: 100px;
+}
+
+/*.col div {padding: 0px;}*/
+
+.pan-footer {
+  padding: 1rem 0;
+  color: #999;
+  background-color: #fff;
+  border-top: 1px solid #fff;
+  font-size: 0.5em;
+}
+
+.demo-long {
+	margin: 200px;
+}
+/*------------------------sidebar------------------------*/
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: 0rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 0.9rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 10rem;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+#sidebar-wrapper {
+  margin-left: -10rem;
+}
+
+#page-content-wrapper {
+  min-width: 0;
+  width: 100%;
+}
+
+@media (min-width: 769px) {
+    #wrapper.toggled #sidebar-wrapper {
+    margin-left: -10rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 1rem;
+    -moz-column-gap: 1rem;
+    column-gap: 1rem;
+    orphans: 1;
+    widows: 1;
+  }
+  .card-columns .card {
+    display: inline-block;
+    width: 100%;
+  }
+}

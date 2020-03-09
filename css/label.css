@@ -1,0 +1,44 @@
+.timer p {
+	font-weight: 500;
+	font-size: 20px;
+	text-align: center;
+	color: #515769;
+	line-height: 60px;
+	margin-bottom: 0px;
+}
+
+.banner {
+	background: #fff;
+	margin-bottom: 15px;
+}
+
+.bannertext {
+	border-left: 2px solid #45a384;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px !important;
+}
+
+.bannertext p {
+	font-size: 16px;
+	font-weight: 700;
+	margin-bottom: 5px;
+	color: #515769;
+}
+.bannertext span {
+	font-size: 13px;
+}
+
+.break {
+	height: 35px;
+	padding-left: 20px !important;
+}
+
+.break p {
+	height: 30px;
+	font-size: 16px;
+	color: #aaa;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 35px;
+}
